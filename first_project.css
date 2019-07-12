@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 800px; 
+    margin: 0 auto;
+    box-shadow: 0px 0px 100px #444;
+    padding: 0px 0px 0px 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #ffffff;
+    font-size: 28px;
+    border-top: 0.5px solid;
+    border-color: rgb(219, 218, 218);
+}
+
+ul li:nth-child(odd) {
+    background: #ffffff;
+}
+
+
+
+ul li.checked {
+    background: #fff;
+    color: rgb(170, 169, 169);
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: rgb(55, 248, 103);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 15px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 18px;
+    width: 8px;
+    
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    color: black;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin-top: 13%;
+    padding: 12px 8px 12px 40px;
+    background-color:#FBFBFB;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #FBFBFB;
+}
+::placeholder{
+    font-size: 21px;
+}
+input {
+    border: none;
+    outline:none; /* убирает обводку */
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -3%;
+    background-color: #FBFBFB;
+}
+
+
+
+.Button {
+    padding:  8px 8px 13px 0px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Button:hover {
+    background-color: rgb(187, 187, 187);
+}
